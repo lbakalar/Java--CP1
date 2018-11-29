@@ -63,6 +63,31 @@ public class CP1 {
 		System.out.print("Enter rate: ");
 		iString = myScanner.next();
 		cRate = Double.parseDouble(iString);
+		
+	try {
+		//prompt, input and convert hours
+		System.out.print("Enter hours: "); 
+		iString = myScanner.next();
+		cHours = Integer.parseInt(iString);
+	}
+	
+	catch (Exception e){
+		System.out.println("Hours must be a whole number, defined to 0");
+		cHours = 0;
+	}
+	
+	try {
+		//prompt, input and convert rate
+		System.out.print("Enter rate: "); 
+		iString = myScanner.next();
+		cRate = Double.parseDouble(iString);
+	}
+	
+	catch (Exception e){
+		System.out.println("Rate must be a decimal number, defaulted to 0");
+		cRate = 0; 
+	} 
+	
 	}
 	
 	public static void calcs() {
